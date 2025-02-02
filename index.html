@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-top">
+                <img src="book.svg" alt="reading-svg" id="book"/>
+                <p class="title">Library</p>
+            </div>
+            <button id="add-btn">Add a Book</button>
+        </div>
+        <div class="main" id="main">
+        </div>
+    </div>
+    <div class="adding" id="adding">
+        <div class="adding-inner">
+            <h2>Add a new book</h2>
+            <div class="adding-the-book-name">
+                <p>Book Name</p>
+                <input type="text" id="addname" required>
+            </div>
+            <div class="adding-the-author">
+                <p>Author</p>
+                <input type="text" id="addauthor" required>
+            </div>
+            <div class="adding-the-#pages">
+                <p>Number of Pages</p>
+                <input type="number" id="addpages" required>
+            </div>
+            <div class="adding-the-read">
+                <p>Read?</p>
+                <div class="radio-buttons">
+                    <label for="read-yes">Yes</label>
+                    <input type="radio" name="choose" id="read-yes">
+                    <label for="read-no">No</label>
+                    <input type="radio" name="choose" id="read-no">
+                </div>
+            </div>
+        </div>
+        <div class="add-buttons">
+            <button id="cancel-button">Cancel</button>
+            <button id="add-book">Add</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

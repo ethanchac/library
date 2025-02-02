@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    background-color: rgb(33, 33, 33);
+    grid-column: 1/2;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.nav-top{
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+    font-weight: bold;
+}
+#add-btn{
+    text-align: center;
+    width: 50%;
+}
+.My-Books{
+    padding: 0;
+    margin: 10px;
+}
+.adding{
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.1s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(13, 13, 13);
+    color: white;
+}
+.adding-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    
+}
+.adding-inner input{
+    width: 1fr;
+    height: 1rem;
+}
+[class^="adding-the-"]{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+}
+.adding.open{
+    opacity: 1;
+    z-index: 999;
+}
+#book{
+    height: 40px;
+    filter: invert(1) brightness(2);
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.section{
+    color: white;
+    background-color: rgb(33, 33, 33);
+    height: 150px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.section div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+    gap: 0px;
+}
